@@ -1,0 +1,818 @@
+[gd_scene load_steps=36 format=2]
+
+[ext_resource path="res://Scenes/Square.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/Board.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Map_tile_45.png" type="Texture" id=3]
+[ext_resource path="res://Assets/wooden.png" type="Texture" id=4]
+[ext_resource path="res://Assets/tile_0038.png" type="Texture" id=5]
+[ext_resource path="res://Assets/tile_0012.png" type="Texture" id=6]
+[ext_resource path="res://Assets/tile_0013.png" type="Texture" id=7]
+[ext_resource path="res://Assets/tile_0014.png" type="Texture" id=8]
+[ext_resource path="res://Assets/tile_0026.png" type="Texture" id=9]
+[ext_resource path="res://Assets/tile_0024.png" type="Texture" id=10]
+[ext_resource path="res://Assets/tile_0036.png" type="Texture" id=11]
+[ext_resource path="res://Assets/tile_0037.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Trees/1.png" type="Texture" id=13]
+[ext_resource path="res://Assets/tilemap_packed.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Trees/2.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Trees/3.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Rocks/1.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Tiles/tile_0020.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Grass/9.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Grass/8.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Plant/tile_0092.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Plant/tile_0104.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Tiles/tile_0005.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Other/AnimalPack.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Bushes/1.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Bushes/2.png" type="Texture" id=26]
+[ext_resource path="res://Assets/Bushes/4.png" type="Texture" id=27]
+[ext_resource path="res://Assets/Trees/6.png" type="Texture" id=28]
+[ext_resource path="res://Assets/Trees/4.png" type="Texture" id=29]
+[ext_resource path="res://Assets/Rocks/5.png" type="Texture" id=30]
+[ext_resource path="res://Assets/Rocks/3.png" type="Texture" id=31]
+[ext_resource path="res://Scenes/SubScenes/Tech_Planter.tscn" type="PackedScene" id=32]
+[ext_resource path="res://Scenes/SubScenes/Tech_Tractor.tscn" type="PackedScene" id=33]
+[ext_resource path="res://Scenes/SubScenes/Tech_Irrigation.tscn" type="PackedScene" id=34]
+
+[sub_resource type="TileSet" id=1]
+0/name = "tilemap_packed.png 0"
+0/texture = ExtResource( 14 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 64, 64, 32, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "tilemap_packed.png 1"
+1/texture = ExtResource( 14 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 96, 64, 32, 32 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "tilemap_packed.png 2"
+2/texture = ExtResource( 14 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 64, 96, 32, 32 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "tilemap_packed.png 3"
+3/texture = ExtResource( 14 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 96, 96, 32, 32 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "tilemap_packed.png 4"
+4/texture = ExtResource( 14 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 64, 32, 32 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "tilemap_packed.png 5"
+5/texture = ExtResource( 14 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 32, 64, 32, 32 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "tilemap_packed.png 6"
+6/texture = ExtResource( 14 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 96, 32, 32 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+7/name = "tilemap_packed.png 7"
+7/texture = ExtResource( 14 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 32, 96, 32, 32 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+
+[node name="Game" type="Node2D"]
+position = Vector2( 88, 136 )
+
+[node name="BackGround" type="Node2D" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="BackGround"]
+margin_left = -88.0
+margin_top = -128.0
+margin_right = 288.0
+margin_bottom = -96.0
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="BackGround"]
+margin_left = -88.0
+margin_top = -96.0
+margin_right = 277.0
+margin_bottom = 2.0
+texture = ExtResource( 4 )
+stretch_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="BackGround"]
+margin_left = -88.0
+margin_bottom = 226.0
+texture = ExtResource( 4 )
+stretch_mode = 2
+
+[node name="TextureRect5" type="TextureRect" parent="BackGround"]
+margin_left = -88.0
+margin_top = 192.0
+margin_right = 272.0
+margin_bottom = 232.0
+texture = ExtResource( 4 )
+stretch_mode = 2
+
+[node name="TextureRect4" type="TextureRect" parent="BackGround"]
+margin_left = 216.0
+margin_right = 272.0
+margin_bottom = 226.0
+texture = ExtResource( 4 )
+stretch_mode = 2
+
+[node name="TextureRect10" type="TextureRect" parent="BackGround"]
+margin_left = 216.0
+margin_right = 272.0
+margin_bottom = 226.0
+texture = ExtResource( 4 )
+stretch_mode = 2
+
+[node name="TextureRect11" type="TextureRect" parent="BackGround"]
+margin_left = 192.0
+margin_top = 88.0
+margin_right = 232.0
+margin_bottom = 226.0
+texture = ExtResource( 4 )
+stretch_mode = 2
+
+[node name="TextureRect6" type="TextureRect" parent="BackGround"]
+margin_left = -56.0
+margin_top = -96.0
+margin_right = 256.0
+margin_bottom = -80.0
+texture = ExtResource( 7 )
+stretch_mode = 2
+
+[node name="TextureRect7" type="TextureRect" parent="BackGround"]
+margin_left = -72.0
+margin_top = 208.0
+margin_right = 256.0
+margin_bottom = 224.0
+texture = ExtResource( 12 )
+stretch_mode = 2
+
+[node name="TextureRect8" type="TextureRect" parent="BackGround"]
+margin_left = 256.0
+margin_top = -80.0
+margin_right = 272.0
+margin_bottom = 208.0
+texture = ExtResource( 9 )
+stretch_mode = 2
+
+[node name="TextureRect9" type="TextureRect" parent="BackGround"]
+margin_left = -88.0
+margin_top = -80.0
+margin_right = -72.0
+margin_bottom = 208.0
+texture = ExtResource( 10 )
+stretch_mode = 2
+
+[node name="Board" type="Node" parent="."]
+script = ExtResource( 2 )
+
+[node name="Square" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 88, 136 )
+
+[node name="Square2" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 112, 136 )
+
+[node name="Square3" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 136, 136 )
+
+[node name="Square4" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 160, 136 )
+
+[node name="Square5" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 184, 136 )
+
+[node name="Square6" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 208, 136 )
+
+[node name="Square7" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 232, 136 )
+
+[node name="Square8" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 256, 136 )
+
+[node name="Square9" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 256, 160 )
+
+[node name="Square10" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 232, 160 )
+
+[node name="Square11" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 208, 160 )
+
+[node name="Square12" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 184, 160 )
+
+[node name="Square13" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 160, 160 )
+
+[node name="Square14" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 136, 160 )
+
+[node name="Square15" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 112, 160 )
+
+[node name="Square16" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 88, 160 )
+
+[node name="Square17" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 88, 184 )
+
+[node name="Square18" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 112, 184 )
+
+[node name="Square19" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 136, 184 )
+
+[node name="Square20" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 160, 184 )
+
+[node name="Square21" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 184, 184 )
+
+[node name="Square22" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 208, 184 )
+
+[node name="Square23" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 232, 184 )
+
+[node name="Square24" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 256, 184 )
+
+[node name="Square25" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 256, 208 )
+
+[node name="Square26" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 232, 208 )
+
+[node name="Square27" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 208, 208 )
+
+[node name="Square28" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 184, 208 )
+
+[node name="Square29" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 160, 208 )
+
+[node name="Square30" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 136, 208 )
+
+[node name="Square31" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 112, 208 )
+
+[node name="Square32" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 88, 208 )
+
+[node name="Square33" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 88, 232 )
+
+[node name="Square42" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 88, 256 )
+
+[node name="Square43" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 88, 280 )
+
+[node name="Square44" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 88, 304 )
+
+[node name="Square45" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 112, 304 )
+
+[node name="Square34" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 112, 232 )
+
+[node name="Square47" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 112, 256 )
+
+[node name="Square49" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 112, 280 )
+
+[node name="Square50" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 136, 280 )
+
+[node name="Square55" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 136, 304 )
+
+[node name="Square56" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 160, 304 )
+
+[node name="Square57" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 160, 280 )
+
+[node name="Square58" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 184, 280 )
+
+[node name="Square59" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 184, 304 )
+
+[node name="Square60" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 208, 304 )
+
+[node name="Square61" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 208, 280 )
+
+[node name="Square62" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 232, 280 )
+
+[node name="Square63" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 256, 280 )
+
+[node name="Square64" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 256, 304 )
+
+[node name="Square65" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 232, 304 )
+
+[node name="Square35" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 136, 232 )
+
+[node name="Square48" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 136, 256 )
+
+[node name="Square36" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 160, 232 )
+
+[node name="Square51" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 160, 256 )
+
+[node name="Square37" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 184, 232 )
+
+[node name="Square52" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 184, 256 )
+
+[node name="Square38" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 208, 232 )
+
+[node name="Square53" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 208, 256 )
+
+[node name="Square39" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 232, 232 )
+
+[node name="Square54" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 232, 256 )
+
+[node name="Square40" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 256, 232 )
+
+[node name="Square41" parent="Board" instance=ExtResource( 1 )]
+position = Vector2( 256, 256 )
+
+[node name="ControlPanel" type="Node" parent="."]
+
+[node name="Tech_Planter" parent="ControlPanel" instance=ExtResource( 32 )]
+position = Vector2( 280, 152 )
+
+[node name="Tech_Tractor" parent="ControlPanel" instance=ExtResource( 33 )]
+position = Vector2( 280, 176 )
+
+[node name="Tech_Irrigation" parent="ControlPanel" instance=ExtResource( 34 )]
+position = Vector2( 280, 200 )
+
+[node name="ArtSprites" type="Node" parent="."]
+
+[node name="Sprite" type="Sprite" parent="ArtSprites"]
+position = Vector2( 8, 48 )
+texture = ExtResource( 6 )
+
+[node name="Sprite2" type="Sprite" parent="ArtSprites"]
+position = Vector2( 24, 48 )
+texture = ExtResource( 7 )
+
+[node name="Sprite3" type="Sprite" parent="ArtSprites"]
+position = Vector2( 352, 48 )
+texture = ExtResource( 8 )
+
+[node name="Sprite4" type="Sprite" parent="ArtSprites"]
+position = Vector2( 8, 352 )
+texture = ExtResource( 11 )
+
+[node name="Sprite10" type="Sprite" parent="ArtSprites"]
+position = Vector2( 8, 168 )
+texture = ExtResource( 19 )
+
+[node name="Sprite11" type="Sprite" parent="ArtSprites"]
+position = Vector2( 8, 216 )
+texture = ExtResource( 20 )
+
+[node name="Sprite6" type="Sprite" parent="ArtSprites"]
+position = Vector2( 328, 56 )
+texture = ExtResource( 13 )
+
+[node name="Sprite14" type="Sprite" parent="ArtSprites"]
+position = Vector2( 304, 56 )
+texture = ExtResource( 13 )
+
+[node name="Sprite15" type="Sprite" parent="ArtSprites"]
+position = Vector2( 304, 56 )
+texture = ExtResource( 13 )
+
+[node name="Sprite16" type="Sprite" parent="ArtSprites"]
+position = Vector2( 328, 80 )
+texture = ExtResource( 13 )
+
+[node name="Sprite7" type="Sprite" parent="ArtSprites"]
+position = Vector2( 304, 80 )
+texture = ExtResource( 15 )
+
+[node name="Sprite17" type="Sprite" parent="ArtSprites"]
+position = Vector2( 304, 80 )
+texture = ExtResource( 15 )
+
+[node name="Sprite18" type="Sprite" parent="ArtSprites"]
+position = Vector2( 280, 64 )
+texture = ExtResource( 13 )
+
+[node name="Sprite8" type="Sprite" parent="ArtSprites"]
+position = Vector2( 56, 104 )
+texture = ExtResource( 16 )
+
+[node name="Sprite9" type="Sprite" parent="ArtSprites"]
+position = Vector2( 304, 128 )
+texture = ExtResource( 17 )
+
+[node name="Sprite72" type="Sprite" parent="ArtSprites"]
+position = Vector2( 64, 328 )
+texture = ExtResource( 30 )
+
+[node name="Sprite13" type="Sprite" parent="ArtSprites"]
+position = Vector2( 24, 56 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite41" type="Sprite" parent="ArtSprites"]
+position = Vector2( 24, 56 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite19" type="Sprite" parent="ArtSprites"]
+position = Vector2( 24, 56 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite20" type="Sprite" parent="ArtSprites"]
+position = Vector2( 64, 56 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite23" type="Sprite" parent="ArtSprites"]
+position = Vector2( 48, 72 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite24" type="Sprite" parent="ArtSprites"]
+position = Vector2( 72, 72 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite34" type="Sprite" parent="ArtSprites"]
+position = Vector2( 304, 160 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 18 )
+centered = false
+
+[node name="Sprite36" type="Sprite" parent="ArtSprites"]
+position = Vector2( 312, 200 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 23 )
+centered = false
+
+[node name="Sprite25" type="Sprite" parent="ArtSprites"]
+position = Vector2( 32, 144 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 25 )
+
+[node name="Sprite43" type="Sprite" parent="ArtSprites"]
+position = Vector2( 48, 160 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 26 )
+
+[node name="Sprite44" type="Sprite" parent="ArtSprites"]
+position = Vector2( 56, 144 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 27 )
+
+[node name="Sprite42" type="Sprite" parent="ArtSprites"]
+position = Vector2( 24, 88 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite38" type="Sprite" parent="ArtSprites"]
+position = Vector2( 32, 120 )
+scale = Vector2( 0.983333, 0.833333 )
+texture = ExtResource( 24 )
+hframes = 5
+vframes = 2
+
+[node name="Sprite39" type="Sprite" parent="ArtSprites"]
+position = Vector2( 264, 336 )
+scale = Vector2( 1.1516, 0.75 )
+texture = ExtResource( 24 )
+flip_h = true
+hframes = 6
+vframes = 3
+frame = 2
+
+[node name="Sprite40" type="Sprite" parent="ArtSprites"]
+position = Vector2( 96, 344 )
+scale = Vector2( 1.1516, 0.75 )
+texture = ExtResource( 24 )
+flip_h = true
+hframes = 9
+vframes = 3
+frame = 14
+
+[node name="Sprite26" type="Sprite" parent="ArtSprites"]
+position = Vector2( 160, 56 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite27" type="Sprite" parent="ArtSprites"]
+position = Vector2( 184, 64 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite28" type="Sprite" parent="ArtSprites"]
+position = Vector2( 208, 64 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite29" type="Sprite" parent="ArtSprites"]
+position = Vector2( 232, 56 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite30" type="Sprite" parent="ArtSprites"]
+position = Vector2( 232, 56 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite31" type="Sprite" parent="ArtSprites"]
+position = Vector2( 256, 64 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite32" type="Sprite" parent="ArtSprites"]
+position = Vector2( 312, 72 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite33" type="Sprite" parent="ArtSprites"]
+position = Vector2( 288, 88 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite35" type="Sprite" parent="ArtSprites"]
+position = Vector2( 312, 112 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite45" type="Sprite" parent="ArtSprites"]
+position = Vector2( 72, 112 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite56" type="Sprite" parent="ArtSprites"]
+position = Vector2( 72, 192 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite46" type="Sprite" parent="ArtSprites"]
+position = Vector2( 32, 184 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite47" type="Sprite" parent="ArtSprites"]
+position = Vector2( 48, 192 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite48" type="Sprite" parent="ArtSprites"]
+position = Vector2( 32, 216 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 16 )
+
+[node name="Sprite49" type="Sprite" parent="ArtSprites"]
+position = Vector2( 64, 240 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 29 )
+
+[node name="Sprite50" type="Sprite" parent="ArtSprites"]
+position = Vector2( 64, 208 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 15 )
+
+[node name="Sprite51" type="Sprite" parent="ArtSprites"]
+position = Vector2( 40, 248 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 30 )
+
+[node name="Sprite52" type="Sprite" parent="ArtSprites"]
+position = Vector2( 24, 264 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 28 )
+
+[node name="Sprite53" type="Sprite" parent="ArtSprites"]
+position = Vector2( 56, 264 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite54" type="Sprite" parent="ArtSprites"]
+position = Vector2( 48, 280 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 28 )
+
+[node name="Sprite55" type="Sprite" parent="ArtSprites"]
+position = Vector2( 41.225, 296 )
+scale = Vector2( 0.951887, 1 )
+texture = ExtResource( 31 )
+
+[node name="Sprite57" type="Sprite" parent="ArtSprites"]
+position = Vector2( 72, 296 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite58" type="Sprite" parent="ArtSprites"]
+position = Vector2( 328, 296 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite59" type="Sprite" parent="ArtSprites"]
+position = Vector2( 304, 296 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite60" type="Sprite" parent="ArtSprites"]
+position = Vector2( 312, 320 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 16 )
+
+[node name="Sprite61" type="Sprite" parent="ArtSprites"]
+position = Vector2( 328, 264 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite62" type="Sprite" parent="ArtSprites"]
+position = Vector2( 304, 240 )
+scale = Vector2( 0.946296, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite63" type="Sprite" parent="ArtSprites"]
+position = Vector2( 320, 144 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite64" type="Sprite" parent="ArtSprites"]
+position = Vector2( 336, 112 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite65" type="Sprite" parent="ArtSprites"]
+position = Vector2( 328, 232 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite73" type="Sprite" parent="ArtSprites"]
+position = Vector2( 296, 320 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite74" type="Sprite" parent="ArtSprites"]
+position = Vector2( 280, 104 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite66" type="Sprite" parent="ArtSprites"]
+position = Vector2( 336, 152 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite67" type="Sprite" parent="ArtSprites"]
+position = Vector2( 336, 152 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite68" type="Sprite" parent="ArtSprites"]
+position = Vector2( 296, 272 )
+scale = Vector2( 0.888889, 1.04545 )
+texture = ExtResource( 13 )
+
+[node name="Sprite69" type="Sprite" parent="ArtSprites"]
+position = Vector2( 24, 320 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite70" type="Sprite" parent="ArtSprites"]
+position = Vector2( 64, 168 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite71" type="Sprite" parent="ArtSprites"]
+position = Vector2( 64, 168 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 15 )
+
+[node name="Sprite21" type="Sprite" parent="ArtSprites"]
+position = Vector2( 96, 56 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite22" type="Sprite" parent="ArtSprites"]
+position = Vector2( 128, 56 )
+scale = Vector2( 1.3, 1 )
+texture = ExtResource( 13 )
+
+[node name="Sprite12" type="Sprite" parent="ArtSprites"]
+position = Vector2( 80, 152 )
+texture = ExtResource( 22 )
+
+[node name="Sprite37" type="Sprite" parent="ArtSprites"]
+position = Vector2( 80, 136 )
+texture = ExtResource( 21 )
+
+[node name="Sprite5" type="Sprite" parent="ArtSprites"]
+position = Vector2( 352, 352 )
+texture = ExtResource( 5 )
+
+[node name="TileMap" type="TileMap" parent="ArtSprites"]
+position = Vector2( 88, 136 )
+tile_set = SubResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( -131072, 4, 0, -131071, 5, 0, -131070, 0, 0, -131069, 1, 0, -131068, 4, 0, -131067, 5, 0, -65536, 2, 0, -65535, 3, 0, -65534, 2, 0, -65533, 3, 0, -65532, 2, 0, -65531, 3, 0 )
